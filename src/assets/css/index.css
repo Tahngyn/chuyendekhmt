@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes ping {
+	30%,
+	100% {
+		transform: scale(1.02);
+		opacity: 0.6;
+	}
+}
+
+.spinner {
+	width: 56px;
+	height: 56px;
+	display: grid;
+	border: 4.5px solid #0000;
+	border-radius: 50%;
+	border-color: #dbdcef #0000;
+	animation: spinner-animation 1s infinite linear;
+}
+
+.spinner::before,
+.spinner::after {
+	content: '';
+	grid-area: 1/1;
+	margin: 2.2px;
+	border: inherit;
+	border-radius: 50%;
+}
+
+.spinner::before {
+	border-color: #474bff #0000;
+	animation: inherit;
+	animation-duration: 0.5s;
+	animation-direction: reverse;
+}
+
+.spinner::after {
+	margin: 8.9px;
+}
+
+@keyframes spinner-animation {
+	100% {
+		transform: rotate(1turn);
+	}
+}
+
+html,
+body,
+#root,
+.App {
+	height: 100%;
+}
+
+body {
+	height: 100vh;
+	/* background-color: #edf3fe; */
+}
+
+
+.container {
+	display: flex;
+	height: 100vh;
+}
+
+.menu {
+	width: 200px;
+	background-color: #f0f0f0;
+	padding: 20px;
+}
+
+.menu h2 {
+	margin-top: 0;
+}
+
+.menu ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.menu li {
+	cursor: pointer;
+	padding: 10px;
+}
+
+.menu li:hover {
+	background-color: #e0e0e0;
+}
+
+.content {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content img {
+	max-width: 100%;
+	max-height: 100%;
+}
