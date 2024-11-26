@@ -16,7 +16,7 @@ export default function Home() {
                             href="/"
                             class="flex text-3xl text-black font-medium mb-4 md:mb-0"
                         >
-                            <img src={logo} width={150} alt="logo" />
+                            <img src={logo} width={50} alt="logo" />
                         </a>
                         <button
                             className="text-black pb-4 cursor-pointer leading-none px-3 py-1 md:hidden outline-none focus:outline-none content-end ml-auto"
@@ -49,14 +49,14 @@ export default function Home() {
                         }
                     >
                         <div class="md:ml-auto md:mr-auto font-4 pt-1 md:pl-14 pl-1 flex flex-wrap items-center md:text-base text-1xl md:justify-center justify-items-start">
-                            <a class="mr-11 pr-2 cursor-pointer text-black hover:text-black font-semibold tr04">
+                            <a class="mr-11 pr-2 cursor-pointer text-emerald-900 hover:text-black font-semibold tr04">
                                 Features
                             </a>
                             <div className="relative">
                                 <button
                                     type="button"
                                     className="
-                   group rounded-md text-black inline-flex items-center text-base font-medium focus:outline-none pb-8'
+                   group rounded-md text-emerald-900 inline-flex items-center text-base font-medium focus:outline-none pb-8'
                   "
                                     onMouseEnter={() => (setFlyer(!flyer), setFlyerTwo(false))}
                                 >
@@ -64,8 +64,8 @@ export default function Home() {
                                     <svg
                                         className={
                                             flyer === true
-                                                ? "transform rotate-180 ml-3 h-5 w-5 transition ease-out duration-200"
-                                                : "ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
+                                                ? "transform rotate-180 ml-1 h-5 w-5 transition ease-out duration-200"
+                                                : "ml-1 h-5 w-5 text-gray-400 group-hover:text-gray-500"
                                         }
                                         xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 20 20"
@@ -88,14 +88,14 @@ export default function Home() {
                                     }
                                 >
                                     <div className="rounded-lg shadow-lg ring-1 ring-white ring-opacity-5 overflow-hidden">
-                                        <div className="relative grid gap-6 bg-white px-2 py-6 sm:gap-8 ">
+                                        <div className="relative grid gap-6 bg-blue-50 px-2 py-6 sm:gap-8 ">
                                             <a
                                                 href="/"
                                                 className="-m-3 p-3 flex items-start rounded-lg hover:bg-blue-50 tr04"
                                             >
                                                 <div className="ml-4">
                                                     <p className="text-base font-medium text-black">
-                                                        NINE4 TEMPLATE #1
+                                                        TEMPLATE #1
                                                     </p>
                                                     <p className="mt-1 text-sm text-gray-500">
                                                         First Template
@@ -108,7 +108,7 @@ export default function Home() {
                                             >
                                                 <div className="ml-4">
                                                     <p className="text-base font-medium text-black">
-                                                        NINE4 TEMPLATE #2
+                                                        TEMPLATE #2
                                                     </p>
                                                     <p className="mt-1 text-sm text-gray-500">
                                                         Second Template
@@ -121,7 +121,7 @@ export default function Home() {
                                             >
                                                 <div className="ml-4">
                                                     <p className="text-base font-medium text-black">
-                                                        NINE4 TEMPLATE #3
+                                                        TEMPLATE #3
                                                     </p>
                                                     <p className="mt-1 text-sm text-gray-500">
                                                         Third Template
@@ -132,16 +132,16 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                            <a class="mr-12 md:ml-11 ml-0 cursor-pointer text-black hover:text-black font-semibold tr04">
+                            <a class="mr-12 md:ml-11 ml-0 cursor-pointer text-emerald-900 hover:text-black font-semibold tr04">
                                 Pricing
                             </a>
-                            <a class="mr-5 cursor-pointer text-black hover:text-black font-semibold tr04">
+                            <a class="mr-5 cursor-pointer text-emerald-900 hover:text-black font-semibold tr04">
                                 Careers
                             </a>
                         </div>
                         <a
                             href="/login"
-                            className="bg-black px-4 py-2 border rounded-md text-white tracking-wide"
+                            className="bg-emerald-900 hover:bg-emerald-700 ease-in-out duration-500 px-4 py-2 border rounded-md text-white tracking-wide"
                         >
                             Login
                         </a>
@@ -151,17 +151,17 @@ export default function Home() {
 
             <section class="text-gray-600 body-font">
                 <div class="max-w-5xl pt-52 pb-24 mx-auto">
-                    <h1 class="text-center text-7xl lh-6 ld-04 font-bold text-black mb-6">
-                        Build your own Model<br /> fast and easy
+                    <h1 class="text-center text-7xl lh-6 ld-04 font-bold font-sans text-emerald-950 mb-6">
+                        Build your own Model<br /> Fast and Easy
                     </h1>
-                    <h2 class="text-2xl font-4 font-semibold lh-6 ld-04 pb-11 text-gray-700 text-center">
+                    <h2 class="text-2xl font-4 font-bold font-mono lh-6 ld-04 pb-11 text-gray-700 text-center">
                         Pixel Brain is a free to use template website for websites made
                         <br />
                         with Next.js and styled with Tailwind CSS
                     </h2>
                     <div className="text-center">
                         <a
-                            className="rounded-xl inline-flex items-center py-3 font-semibold tracking-tighter text-black transition duration-500 ease-in-out transform bg-transparent ml-11 bg-gradient-to-r from-emerald-300 to-emerald-800 px-14 text-md md:mt-0 focus:shadow-outline"
+                            className="rounded-xl inline-flex items-center py-3 font-semibold tracking-tighter text-black transition duration-700 ease-in-out bg-transparent ml-11 transform  bg-gradient-to-r from-emerald-300 to-emerald-800 hove: px-14 text-md md:mt-0 focus:shadow-outline"
                             href="/login"
                         >
                             <div className="flex text-lg">
@@ -256,7 +256,7 @@ export default function Home() {
                 <section class="relative pb-24">
                     <div class="max-w-6xl mx-auto bg-blue-50 rounded-xl px-4 sm:px-6 text-center">
                         <div class="py-24 md:py-36">
-                            <h1 class="mb-5 text-6xl font-bold text-black">
+                            <h1 class="mb-5 text-6xl font-bold text-emerald-900">
                                 Subscribe to our newsletter
                             </h1>
                             <h1 class="mb-9 text-2xl font-semibold text-black">
@@ -267,10 +267,10 @@ export default function Home() {
                                 placeholder="username@example.com"
                                 name="email"
                                 autocomplete="email"
-                                class="border border-gray-600 w-1/4 pr-2 pl-2 py-3 mt-2 rounded-md text-gray-800 font-semibold hover:border-gray-700 bg-white"
+                                class="border border-emerald-800 w-1/4 pr-2 pl-2 py-3 mt-2 rounded-md text-gray-800 font-semibold hover:border-emerald-700 bg-white"
                             />{" "}
                             <a
-                                class="inline-flex items-center px-14 py-3 mt-2 ml-2 font-medium text-black transition duration-500 ease-in-out transform text-white border font-bold rounded-lg bg-black border-black"
+                                class="inline-flex items-center px-14 py-3 mt-2 ml-2 font-medium text-black transition duration-500 ease-in-out transform text-white border font-bold rounded-lg bg-emerald-900 border-emerald-900"
                                 href="/"
                             >
                                 <span class="justify-center">Subscribe</span>

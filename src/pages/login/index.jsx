@@ -64,12 +64,12 @@ const Login = () => {
                         </div>
                         <form onSubmit={handleLogin} className="space-y-5">
                             <div>
-                                <label className="font-medium">Email</label>
+                                <label className="font-medium ">Email</label>
                                 <input
                                     type="email"
                                     name="email"
                                     required
-                                    className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-blue-600 shadow-sm rounded-lg"
+                                    className="w-full mt-2 px-3 py-2 text-emerald-900 bg-emerald-50 outline-none border focus:border-emerald-600 shadow-sm rounded-lg"
                                 />
                             </div>
                             <div>
@@ -78,10 +78,10 @@ const Login = () => {
                                     type="password"
                                     name="password"
                                     required
-                                    className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-blue-600 shadow-sm rounded-lg"
+                                    className="w-full mt-2 px-3 py-2 text-emerald-900 bg-emerald-50 outline-none border focus:border-emerald-600 shadow-sm rounded-lg"
                                 />
                             </div>
-                            <button className="w-full px-4 py-2 text-white font-medium bg-blue-600 hover:bg-blue-500 active:bg-blue-600 rounded-lg duration-150">
+                            <button className="w-full px-4 py-2 text-white font-medium bg-emerald-700 hover:bg-emerald-600 active:bg-emerald-700 rounded-lg duration-150">
                                 Login{' '}
                             </button>
                         </form>
@@ -89,7 +89,7 @@ const Login = () => {
                             Don't have an account?{' '}
                             <a
                                 href="/signup"
-                                className="font-medium text-blue-600 hover:text-blue-500"
+                                className="font-medium text-emerald-700 hover:text-emerald-500"
                             >
                                 Sign up
                             </a>
