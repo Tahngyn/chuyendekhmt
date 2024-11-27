@@ -161,7 +161,7 @@ export default function Home() {
                     </h2>
                     <div className="text-center">
                         <a
-                            className="rounded-xl inline-flex items-center py-3 font-semibold tracking-tighter text-black transition duration-700 ease-in-out bg-transparent ml-11 transform  bg-gradient-to-r from-emerald-300 to-emerald-800 hove: px-14 text-md md:mt-0 focus:shadow-outline"
+                            className="rounded-xl inline-flex items-center py-3 font-semibold tracking-tighter text-black transition duration-700 ease-in-out bg-transparent ml-11 transform  bg-gradient-to-r from-emerald-300 to-emerald-800 px-14 text-md md:mt-0 focus:shadow-outline"
                             href="/login"
                         >
                             <div className="flex text-lg">
@@ -191,34 +191,33 @@ export default function Home() {
                             Lorem ipsum dolor sit amet
                         </h3>
                         <p class="pt-2 value-text text-md text-black fkrr1">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-                            tincidunt a libero in finibus. Maecenas a nisl vitae ante rutrum
-                            porttitor.
+                            With a focus on elegant design and balanced formatting. 
+                            Tailored solutions meet practical needs, ensuring seamless experiences.
                         </p>
                     </div>
                     <div class="ktq4">
                         <h3 class="pt-3 font-semibold text-lg text-black">
-                            Lorem ipsum dolor sit amet
+                            Graceful beginnings weave through a tapestry of ideas.
                         </h3>
                         <p class="pt-2 value-text text-md text-black fkrr1">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-                            tincidunt a libero in finibus. Maecenas a nisl vitae ante rutrum
-                            porttitor.
+                            Blending bold design with timeless elegance. Freedom finds its place in carefully crafted moments, 
+                            as each detail aligns to form a seamless narrative. From roots to aspirations, the journey flows, 
+                            balancing strength and fluidity in perfect harmony.
                         </p>
                     </div>
                     <div class="ktq4">
                         <h3 class="pt-3 font-semibold text-lg text-black">
-                            Lorem ipsum dolor sit amet
+                            Where structure meets freedom, ideas unfold with purpose.
                         </h3>
                         <p class="pt-2 value-text text-md text-black fkrr1">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-                            tincidunt a libero in finibus. Maecenas a nisl vitae ante rutrum
-                            porttitor.
+                            Lines converge effortlessly, shaping paths that lead to innovation. 
+                            From a steady foundation to bold transitions, every element works in harmony, 
+                            forging a connection between vision and reality.
                         </p>
                     </div>
                     <div class="ktq4">
                         <h3 class="pt-3 font-semibold text-lg text-black">
-                            Lorem ipsum dolor sit amet
+                        E   legance takes form as each piece falls into place, guided by purpose and precision.
                         </h3>
                         <p class="pt-2 value-text text-md text-black fkrr1">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas

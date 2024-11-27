@@ -63,14 +63,14 @@ export default function ProjectList() {
 						<div className="bg-white lg:min-w-0 lg:flex-1">
 							<div className="flex justify-between mx-auto px-3 mb-5 ">
 								<div className="px-4 lg:px-0">
-									<h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
-										Projects
+									<h1 className="text-2xl font-bold tracking-tight text-emerald-900 sm:text-3xl">
+										PROJECTS
 									</h1>
 									{/* Meta info */}
 									<div className="flex mt-5 flex-col space-y-6 sm:flex-row sm:space-y-0 sm:space-x-8 xl:flex-col xl:space-x-0 xl:space-y-6">
 										<div className="flex items-center space-x-2">
 											<RectangleStackIcon
-												className="h-5 w-5 text-gray-400"
+												className="h-5 w-5 text-emerald-900"
 												aria-hidden="true"
 											/>
 											<span className="text-sm font-medium text-gray-500">
@@ -81,16 +81,16 @@ export default function ProjectList() {
 									</div>
 								</div>
 								{/* Action buttons */}
-								<div className="flex flex-col sm:flex-row xl:flex-col">
+								<div className="group relative flex flex-col sm:flex-row xl:flex-col">
 									<button
 										type="button"
-										className="inline-flex items-center rounded-md border border-transparent bg-blue-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 cursor-pointer h-fit"
+										className="inline-flex items-center rounded-md border border-transparent bg-emerald-700 px-4 py-2 text-sm font-medium text-white shadow-sm group-hover:bg-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-700 focus:ring-offset-2 cursor-pointer h-fit"
 										onClick={() =>
 											updateState({ showUploader: true })
 										}
 									>
 										<PlusIcon
-											className="-ml-1 mr-2 h-5 w-5"
+											className="-ml-1 mr-2 h-5 w-5 transition duration-500 group-hover:rotate-90"
 											aria-hidden="true"
 										/>
 										New Project
@@ -170,7 +170,7 @@ export default function ProjectList() {
 									<div className="">
 										<label
 											htmlFor="name"
-											className="block text-sm font-medium text-gray-700"
+											className="block text-sm font-medium text-emerald-800"
 										>
 											Name
 										</label>
@@ -178,18 +178,18 @@ export default function ProjectList() {
 											type="text"
 											name="name"
 											id="name"
-											defaultValue="Project name"
+											defaultValue="Project Name"
 											required
 											minLength={10}
-											className="mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
-											placeholder="Project name goes here"
+											className="mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm hover:border-emerald-500 focus:border-emerald-600 focus:outline-none focus:ring-1 focus:ring-emerald-300 sm:text-sm"
+											placeholder="Project Name goes here..."
 										/>
 									</div>
 
 									<div className="">
 										<label
 											htmlFor="about"
-											className="block text-sm font-medium text-gray-700"
+											className="block text-sm font-medium text-emerald-800"
 										>
 											Description
 										</label>
@@ -198,11 +198,11 @@ export default function ProjectList() {
 												id="description"
 												name="description"
 												rows={5}
-												defaultValue="Description project"
+												defaultValue="Description Project"
 												required
 												minLength={5}
-												className="mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
-												placeholder="Description of the project goes here "
+												className="mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm hover:border-emerald-500 focus:border-emerald-600 focus:outline-none focus:ring-1 focus:ring-emerald-300 sm:text-sm"
+												placeholder="Description of the project goes here... "
 											/>
 										</div>
 									</div>
@@ -210,7 +210,7 @@ export default function ProjectList() {
 									<div className="">
 										<label
 											htmlFor="expectation_accuracy"
-											className="block text-sm font-medium text-gray-700"
+											className="block text-sm font-medium text-emerald-800"
 										>
 											Expectation Accuracy
 										</label>
@@ -223,21 +223,21 @@ export default function ProjectList() {
 											min={0}
 											max={100}
 											placeholder="0-100"
-											className="mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
+											className="mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm hover:border-emerald-500 focus:border-emerald-600 focus:outline-none focus:ring-1 focus:ring-emerald-300 sm:text-sm"
 										/>
 									</div>
 
 									<div className="">
 										<label
 											htmlFor="country"
-											className="block text-sm font-medium text-gray-700"
+											className="block text-sm font-medium text-emerald-800"
 										>
 											Project Type
 										</label>
 										<select
 											id="type"
 											name="type"
-											className="mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
+											className="mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm hover:border-emerald-500 focus:border-emerald-600 focus:outline-none focus:ring-1 focus:ring-emerald-300 sm:text-sm"
 										>
 											{projType.map((type) => (
 												<option key={type} value={type}>
@@ -248,10 +248,10 @@ export default function ProjectList() {
 									</div>
 								</div>
 							</div>
-							<div className="bg-gray-50 px-4 py-3 text-right sm:px-6">
+							<div className="bg-gray-50 px-5 py-2 text-right sm:px-6">
 								<button
 									type="submit"
-									className="inline-flex justify-center rounded-md border border-transparent bg-blue-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+									className="inline-flex justify-center rounded-md border border-transparent bg-emerald-900 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-800 focus:ring-offset-2"
 								>
 									Save
 								</button>
