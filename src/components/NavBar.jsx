@@ -10,9 +10,9 @@ import clsx from 'clsx';
 
 const NavBar = () => {
     const defaultclassname =
-        'inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-bold text-gray-500 hover:border-gray-300 hover:text-gray-700';
+        'inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-m font-bold text-gray-500 hover:border-gray-300 hover:text-gray-700';
     const activeclassname =
-        'inline-flex items-center border-b-2 border-blue-500 px-1 pt-1 text-sm font-bold text-gray-900';
+        'inline-flex items-center border-b-2 border-emerald-600 px-1 pt-1 text-m font-bold text-gray-900';
 
     const navigate = useNavigate();
     const { logout: authLogout } = useAuth();
@@ -63,7 +63,7 @@ const NavBar = () => {
                                         alt="UET MLOps"
                                     />
                                 </div>
-                                <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
+                                <div className="hidden sm:ml-8 sm:flex sm:space-x-8">
                                     <ActiveLink
                                         to={PATHS.PROJECTS}
                                         defaultclassname={defaultclassname}
@@ -80,10 +80,10 @@ const NavBar = () => {
                                     <div>
                                         <Menu.Button className="transition flex gap-2 rounded-xl bg-white text-sm focus:outline-none hover:bg-gray-100 py-1 px-2">
                                             <span className="font-bold pt-[5px]">
-                                                username
+                                                User_name
                                             </span>
                                             <img
-                                                className="h-8 w-8 border-solid border-2 border-blue-600 rounded-full"
+                                                className="h-8 w-8 border-solid border-2 border-emerald-600 rounded-full"
                                                 src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                                                 alt=""
                                             />

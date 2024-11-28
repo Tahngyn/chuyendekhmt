@@ -29,7 +29,7 @@ export default function ProjectCard({ project, className, getProjects }) {
 			<div
 				key={project._id}
 				className={clsx(
-					'group relative rounded-xl bg-grey-100 shadow-md transition duration-300',
+					'group relative rounded-xl bg-grey-100 hover:ring-2 hover:ring-emerald-200 shadow-md transition duration-300',
 					className
 				)}
 			>
@@ -37,11 +37,11 @@ export default function ProjectCard({ project, className, getProjects }) {
 					<span
 						className={clsx(
 							'text-emerald-800',
-							'bg-emerald-50',
+							'bg-[#F7F8F8]',
 							'scale-90',
 							'rounded-full inline-flex p-3 ring-4 ring-white',
 							'transition duration-450',
-							'group-hover:scale-110 ease-in-out'
+							'group-hover:scale-110 group-hover:bg-emerald-100 ease-in-out'
 						)}
 					>
 						<CubeIcon
@@ -54,7 +54,7 @@ export default function ProjectCard({ project, className, getProjects }) {
 					<div className="group-hover:block flex flex-col items-center ml-auto">
 						<button
 							onClick={() => handleDelete(project._id)}
-							className="w-12 h-12 rounded-xl bg-emerald-50 border-grey-50 border-2 font-semibold flex flex-col items-center justify-center cursor-pointer duration-300 overflow-hidden relative gap-[2px] hover:bg-emerald-100 hover:gap-0 hover:duration-300 hover:items-center hover:shadow-[0px_0px_20px_rgba(0,0,0,0.164)] active:scale-95"
+							className="w-12 h-12 rounded-xl bg-[#F7F8F8] border-grey-50 border-2 font-semibold flex flex-col items-center justify-center cursor-pointer duration-300 overflow-hidden relative gap-[2px] hover:bg-emerald-100 hover:gap-0 hover:duration-300 hover:items-center hover:shadow-[0px_0px_20px_rgba(0,0,0,0.164)] active:scale-95"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -105,7 +105,7 @@ export default function ProjectCard({ project, className, getProjects }) {
 					</div>
 				</div>
 
-				<div className="mt-5 bg-emerald-50 group-hover:bg-gradient-to-r from-emerald-50 to-emerald-100 ease-in-out p-6 rounded-xl transition duration-300 relative">
+				<div className="mt-5 bg-emerald-50 group-hover:bg-gradient-to-r from-[#F7F8F8] to-emerald-100 ease-in-out p-6 rounded-xl transition duration-300 relative">
 					<div className="flex w-full justify-between items-center">
 						<h3 className="text-xl font-medium">
 							<a

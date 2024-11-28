@@ -113,9 +113,9 @@ const Dashboard = ({ updateFields, projectInfo }) => {
 			<div
 				onClick={() => updateState({ show: true })}
 				// for="file"
-				className="flex flex-col cursor-pointer my-10 shadow justify-between mx-auto items-center p-[10px] gap-[5px] bg-[rgba(0,110,255,0.041)]  rounded-[10px] h-[calc(100%-124px)] min-h-[500px]"
+				className="group flex flex-col cursor-pointer my-10 shadow justify-between mx-auto items-center p-[10px] gap-[5px] bg-emerald-50   hover:bg-white rounded-[10px] h-[calc(100%-124px)] min-h-[500px]"
 			>
-				<div className="header flex flex-1 w-full border-[2px] justify-center items-center flex-col border-dashed border-[#4169e1] rounded-[10px]">
+				<div className="header flex flex-1 w-full border-[2px] justify-center items-center flex-col border-dashed border-emerald-700 rounded-[10px]">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="100"

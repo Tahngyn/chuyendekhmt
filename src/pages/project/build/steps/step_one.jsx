@@ -48,7 +48,7 @@ const StepOne = ({ name, email, updateFields, projectInfo }) => {
 
 			<div
 				aria-label="Progress"
-				className="w-full p-5 bg-white overflow-hidden"
+				className="w-full p-5 bg-emerald-50 rounded overflow-hidden"
 			>
 				<div className="max-w-2xl mx-auto px-4 md:px-0">
 					<ul
@@ -68,9 +68,9 @@ const StepOne = ({ name, email, updateFields, projectInfo }) => {
 								<div className="flex items-center flex-col gap-x-2">
 									<div
 										className={`w-8 h-8 rounded-full border-2 flex-none flex items-center justify-center ${currentStepIndex > idx
-											? 'bg-blue-600 border-blue-600'
+											? 'bg-emerald-700 border-grey-500'
 											: '' || currentStepIndex === idx
-												? 'border-blue-600'
+												? 'border-emerald-700'
 												: ''
 											}`}
 									>
@@ -81,7 +81,7 @@ const StepOne = ({ name, email, updateFields, projectInfo }) => {
 												: '' ||
 													currentStepIndex ===
 													idx
-													? 'text-blue-600'
+													? 'text-emerald-700'
 													: ''
 												}`}
 										>
@@ -110,23 +110,23 @@ const StepOne = ({ name, email, updateFields, projectInfo }) => {
 										className={`h-12 border md:hidden ${idx === 4
 											? 'hidden'
 											: '' || currentStepIndex > idx
-												? 'border-blue-600'
+												? 'border-emerald-600'
 												: ''
 											}`}
 									/>
 								</div>
 								<div className="h-8 flex items-center md:h-auto">
 									<h3
-										className={`text-sm ${currentStepIndex === idx ? 'text-blue-600' : ''}`}
+										className={`text-sm ${currentStepIndex === idx ? 'text-emerald-700' : ''}`}
 									>
 										{item.name}
 									</h3>
 								</div>
 								<hr
-									className={`hidden mr-2 w-full border md:block ${idx === 4
+									className={`hidden w-full border md:block ${idx === 4
 										? 'hidden'
 										: '' || currentStepIndex > idx
-											? 'border-blue-600'
+											? 'border-emerald-600'
 											: ''
 										}`}
 								/>
