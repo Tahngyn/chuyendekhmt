@@ -152,7 +152,7 @@ export default function Home() {
             <section class="text-gray-600 body-font">
                 <div class="max-w-5xl pt-52 pb-24 mx-auto">
                     <h1 class="text-center text-7xl lh-6 ld-04 font-bold font-sans text-emerald-950 mb-6">
-                        Build your own Model<br /> Fast and Easy
+                        Create your own Model<br /> Fast and Easy
                     </h1>
                     <h2 class="text-2xl font-4 font-bold font-mono lh-6 ld-04 pb-11 text-gray-700 text-center">
                         Pixel Brain is a free to use template website for websites made
