@@ -155,7 +155,7 @@ export default function Home() {
                         Create your own Model<br /> Fast and Easy
                     </h1>
                     <h2 class="text-2xl font-4 font-bold font-mono lh-6 ld-04 pb-11 text-gray-700 text-center">
-                        Pixel Brain is a free to use template website for websites made
+                        Pixel Brain is free to use template website for websites made
                         <br />
                         with Next.js and styled with Tailwind CSS
                     </h2>
