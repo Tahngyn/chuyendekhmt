@@ -11,7 +11,7 @@ import {
 	YAxis,
 } from 'recharts';
 
-export const TrainingChart = ({ data, color = '#8884d8' }) => {
+export const TrainingChart = ({ data, color = '#508D4E' }) => {
 	return (
 		<div style={{ width: '100%' }}>
 			<ResponsiveContainer width="100%" height={300}>

@@ -124,9 +124,9 @@ const StepThree = (props) => {
 							)}
 						</div>
 						<div className="mt-4" aria-hidden="true">
-							<div className="overflow-hidden rounded-full bg-gray-200">
+							<div className="overflow-hidden rounded-full bg-emerald-100">
 								<div
-									className=" h-2 rounded-full bg-blue-600"
+									className=" h-2 rounded-full bg-emerald-600"
 									style={{ width: `${processValue}%` }}
 								/>
 							</div>
@@ -136,7 +136,7 @@ const StepThree = (props) => {
 				</div>
 				<button
 					onClick={next}
-					className="rounded-md bg-red-600 py-[6px] px-4 text-white"
+					className="rounded-md bg-red-600 hover:bg-red-700 transition py-[6px] px-4 text-white"
 				>
 					Stop
 				</button>

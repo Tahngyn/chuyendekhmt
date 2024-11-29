@@ -35,7 +35,7 @@ const LineGraph = ({ data, label }) => (
 						<Line
 							type="monotone"
 							dataKey="value"
-							stroke="#4e80ee"
+							stroke="#508D4E"
 							strokeWidth="3"
 						/>
 					</LineChart>

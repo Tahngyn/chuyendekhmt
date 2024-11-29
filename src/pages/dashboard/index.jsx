@@ -181,21 +181,21 @@ const Dashboard = ({ updateFields, projectInfo }) => {
 					</svg>
 				</button>
 				<h3 className="text-center w-full text-[30px] font-[500] leading-[1.16] mb-8 mt-4">
-					Select how you want to upload
+					Choose a method to upload.
 				</h3>
 				<div className="container flex justify-around items-center mx-auto gap-4">
 					<div
 						// chuyển hướng sang phần Label Studio của anh Thanh
 						onClick={() => updateState({ showUploader: true })}
-						className="w-full h-full bg-white p-10 rounded-md hover:scale-[1.02] transition-all ease-linear duration-100   cursor-pointer shadow-[0px_8px_24px_rgba(0,53,133,0.1)]"
+						className="w-full h-full p-10 rounded-md hover:scale-[1.05] transition-all ease-linear duration-100 cursor-pointer bg-white hover:bg-emerald-50 shadow-[0px_8px_24px_rgba(0,53,133,0.1)] hover:shadow-[0px_8px_24px_rgba(125,192,121)] hover:ring-1 hover:ring-emerald-300"
 					>
 						<div className="flex flex-col">
 							<p className="text-center text-[24px] ">
 								Unlabelled dataset upload
 							</p>
 							<p className="text-center text-[16px] font-[300]">
-								uploaded dataset will be raw status, you can
-								classify them using the platform labeling tool
+								Uploaded dataset will be raw status, you can
+								classify them using the platform labeling tool.
 							</p>
 							<img
 								src="https://dr23pab8nlq87.cloudfront.net/images/classification_upload_unclassified-3KDZ.png"
@@ -206,15 +206,15 @@ const Dashboard = ({ updateFields, projectInfo }) => {
 					</div>
 					<div
 						onClick={() => updateState({ showUploader: true })}
-						className="w-full h-full bg-white p-10 rounded-md hover:scale-[1.02] transition-all ease-linear duration-100   cursor-pointer shadow-[0px_8px_24px_rgba(0,53,133,0.1)]"
+						className="w-full h-full  p-10 rounded-lg hover:scale-[1.05] transition-all ease-linear duration-100 cursor-pointer bg-white hover:bg-emerald-50 shadow-[0px_8px_24px_rgba(0,53,133,0.1)] hover:shadow-[0px_8px_24px_rgba(125,192,121)] hover:ring-1 hover:ring-emerald-300 "
 					>
 						<div className="flex flex-col">
 							<p className="text-center text-[24px] ">
 								Labelled dataset upload{' '}
 							</p>
 							<p className="text-center text-[16px] font-[300]">
-								uploaded dataset will be classified based on
-								your folder structure
+								Uploaded dataset will be classified based on
+								your folder structure.
 							</p>
 							<img
 								src="https://dr23pab8nlq87.cloudfront.net/images/classification_upload_classified-vOZv.png"
@@ -252,14 +252,14 @@ const Dashboard = ({ updateFields, projectInfo }) => {
 				</button>
 				<div className=" h-full overflow-auto py-[50px] w-full left-0 px-10 ">
 					<h1 class="mb-5 text-3xl font-extrabold text-gray-900 text-center">
-						<span class="text-transparent bg-clip-text bg-gradient-to-r to-[#2c67f2] from-[#62cff4]">
+						<span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-500 from-emerald-800">
 							Upload the data
 						</span>{' '}
 						to initiate the process
 					</h1>
 					<label
 						htmlFor="classification"
-						className="h-[180px] flex justify-around items-center mx-auto border-[2px] border-dashed border-gray-500 rounded-[15px] hover:border-[#3498db]"
+						className="h-[180px] flex justify-around items-center mx-auto border-[3px] border-dashed border-gray-400 rounded-[15px] hover:border-emerald-500 transition hover:scale-[1.03]"
 					>
 						<div className="w-full h-full bg-white p-5  cursor-pointer rounded-[15px]">
 							<div className="flex flex-col">
@@ -284,7 +284,7 @@ const Dashboard = ({ updateFields, projectInfo }) => {
 									className="mt-5 w-[200px] h-full mx-auto"
 								/>
 
-								<p className="text-center text-[15px] font-[300]">
+								<p className="text-center text-emerald-900 text-[15px] font-[300]">
 									Folder information will be automatically
 									tagged as metadata to each media{' '}
 								</p>
@@ -303,7 +303,7 @@ const Dashboard = ({ updateFields, projectInfo }) => {
 						/>
 					</label>
 					<div className="flex justify-between items-center mt-5">
-						<span className=" text-start  text-[23px] font-bold">
+						<span className=" text-start text-transparent bg-clip-text bg-gradient-to-r to-emerald-500 from-emerald-800 text-[23px] font-bold">
 							Preview
 						</span>
 						<div className="text-center">
@@ -311,7 +311,7 @@ const Dashboard = ({ updateFields, projectInfo }) => {
 							for Upload
 						</div>
 						<button
-							className="bg-blue-700 rounded-[10px] text-[14px] text-white font-[400] py-[8px] px-[15px]"
+							className="bg-emerald-700 hover:bg-emerald-600 hover:ring-2 hover:ring-emerald-700 rounded-[10px] text-[14px] text-white font-[400] py-[8px] px-[15px]"
 							onClick={uploadFiles}
 						>
 							Upload {dashboardState.uploadFiles.length} File(s)
@@ -349,7 +349,7 @@ const Dashboard = ({ updateFields, projectInfo }) => {
 					{dashboardState.loadedChunk <
 						dashboardState.uploadFiles.length && (
 						<button
-							className="mx-auto flex mt-5 bg-blue-700 rounded-[10px] text-[14px] text-white font-[400] py-[8px] px-[15px]"
+							className="mx-auto flex mt-5 bg-emerald-700 hover:bg-emerald-600 hover:ring-2 hover:ring-emerald-700 rounded-[10px] text-[14px] text-white font-[400] py-[8px] px-[15px]"
 							onClick={handleLoadChunk}
 						>
 							Load more

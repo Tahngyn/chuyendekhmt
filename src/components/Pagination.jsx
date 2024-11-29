@@ -14,7 +14,7 @@ const Pagination = (props) => {
 						}}
 						className={`${
 							currentPage === 1 ? 'hidden' : ''
-						} bg-[#f0f8ff] text-gray-600 rounded-lg px-4 py-2 text-sm font-medium hover:bg-[#FFE4E1] transition-colors duration-300`}
+						} bg-[#f0f8ff] text-gray-600 rounded-lg px-4 py-2 text-m font-medium hover:bg-emerald-100 transition-colors duration-300`}
 					>
 						Previous
 					</a>
@@ -32,9 +32,9 @@ const Pagination = (props) => {
 									key={`index${'-' + index}`}
 									className={`${
 										index + 1 === currentPage
-											? ' text-blue-500 font-semibold text-lg'
+											? ' text-emerald-500 font-semibold text-lg'
 											: 'border-transparent text-gray-500'
-									} cursor-pointer hover:font-semibold inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium transition-all duration-300 ease-in-out hover:text-blue-600`}
+									} cursor-pointer hover:font-semibold inline-flex items-center border-t-2 border-transparent px-5  text-sm font-medium transition-all duration-300 ease-in-out hover:text-emerald-600`}
 								>
 									{index + 1}
 								</a>
@@ -70,7 +70,7 @@ const Pagination = (props) => {
 						}}
 						className={`${
 							currentPage === totalPages ? 'hidden' : ''
-						} bg-[#f0f8ff] text-gray-600 rounded-lg px-4 py-2 text-sm font-medium hover:bg-[#FFE4E1] transition-colors duration-300`}
+						} bg-[#f0f8ff] text-gray-600 rounded-lg px-4 py-2 text-m font-medium hover:bg-emerald-100 transition-colors duration-300`}
 					>
 						Next
 					</a>

@@ -78,7 +78,7 @@ const ImageTrainPreview = ({ images, pagination, next, updateFields }) => {
 			<div className="flex flex-col bg-white shadow-xl rounded-md h-max pl-10 pr-10 pb-8 ml-10">
 				<div className="flex w-full pt-2 pb-5">
 					<div
-						class="flex items-center p-4 mb-4 text-sm text-blue-800 border border-blue-300 rounded-lg bg-blue-50"
+						class="flex items-center p-4 mb-4 text-sm text-emerald-800 border border-emerald-300 rounded-lg bg-blue-50"
 						role="alert"
 					>
 						<svg
@@ -95,10 +95,10 @@ const ImageTrainPreview = ({ images, pagination, next, updateFields }) => {
 							prior to initiating the training process.
 						</div>
 					</div>
-					<div className="ml-auto relative h-full pt-3">
+					<div className="ml-auto hover:scale-[1.03] relative h-full pt-3">
 						<button
 							onClick={handleTrain}
-							className=" text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-2 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+							className=" text-white bg-emerald-800 transition hover:bg-gradient-to-r from-emerald-800 to-emerald-500  focus:ring-2 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-m px-5 py-2.5 text-center me-2 mb-2 ease-in-out"
 						>
 							Train Model
 						</button>

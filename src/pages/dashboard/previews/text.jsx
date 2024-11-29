@@ -126,7 +126,7 @@ const TextUploadPreview = ({ file, index, handleRemoveFile }) => {
 					<div className="flex justify-between items-center mt-4">
 						<button
 							onClick={() => handlePageChange(currentPage - 1)}
-							className="bg-gray-300 text-gray-700 rounded-md px-4 py-2 text-sm font-medium hover:bg-gray-400 disabled:opacity-50 disabled:cursor-not-allowed"
+							className="bg-black text-gray-700 rounded-md px-4 py-2 text-sm font-medium hover:bg-gray-400 disabled:opacity-50 cursor-pointer disabled:cursor-not-allowed"
 							disabled={currentPage === 1}
 						>
 							Previous
