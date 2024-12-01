@@ -29,7 +29,7 @@ export default function ProjectCard({ project, className, getProjects }) {
 			<div
 				key={project._id}
 				className={clsx(
-					'group relative rounded-xl bg-grey-100 hover:ring-2 hover:ring-emerald-200 shadow-md transition duration-300',
+					'group relative rounded-xl bg-grey-100 hover hover:ring-2 hover:ring-emerald-200 shadow-md transition duration-300',
 					className
 				)}
 			>

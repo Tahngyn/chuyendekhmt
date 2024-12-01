@@ -228,9 +228,12 @@ const StepFour = (props) => {
 			{/* BIỂU ĐỒ SAU KHI TRAIN XONG */}
 			<section>
 				<div className="flex">
-					<h1 className="text-3xl font-bold text-center mb-6">
-						Outcomes of the training procedure
-					</h1>
+					<h1 className="text-3xl font-bold text-center mb-6">				
+						<span className="bg-gradient-to-r from-emerald-700 to-emerald-500 text-transparent bg-clip-text">
+						Outcomes 
+						</span>{' '}
+						of the training procedure
+						</h1>					
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						viewBox="0 0 24 24"
@@ -250,7 +253,7 @@ const StepFour = (props) => {
 							updateState({ showUploadModal: true })
 							// handleDeploy();
 						}}
-						className="items-center ml-auto text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-2 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+						className="items-center ml-auto text-white bg-gradient-to-r from-emerald-500 to-emerald-700 hover:bg-gradient-to-bl focus:ring-2 hover:ring-2 hover:ring-emerald-300 focus:outline-none focus:ring-emerald-300 dark:focus:ring-emerald-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
 						// hidden
 					>
 						Predict
@@ -289,7 +292,7 @@ const StepFour = (props) => {
 									<div className="flex flex-col justify-between relative z-10 space-y-12 lg:space-y-6">
 										<div className="space-y-2">
 											<p className=" text-gray-700">
-												<span className="font-bold">
+												<span className="font-bold text-emerald-800">
 													Train loss (train_loss)
 												</span>{' '}
 												measures a model's prediction
@@ -300,21 +303,21 @@ const StepFour = (props) => {
 												performance.
 											</p>
 											<p className=" text-gray-700">
-												<span className="font-bold">
+												<span className="font-bold text-emerald-800">
 													Validation loss (val_loss)
 												</span>{' '}
 												evaluates a model's performance
 												on unseen data, providing
 												insight into its generalization
 												ability. A significant gap
-												between train loss and val_loss
+												between <span className="text-emerald-800 font-semibold">train_loss</span> and <span className="text-emerald-800 font-semibold"> val_loss </span>
 												often indicates overfitting,
 												where the model performs well on
 												training data but poorly on new
 												data.
 											</p>
 											<p className=" text-gray-700">
-												<span className="font-bold">
+												<span className="font-bold text-emerald-800">
 													Validation accuracy
 													(val_accuracy)
 												</span>{' '}
@@ -398,7 +401,7 @@ const StepFour = (props) => {
 
 										<h3 className="text-[#666] font-[700] p-[15px] text-[24px]">
 											Total Prediction:{' '}
-											<strong className="text-blue-600">
+											<strong className="text-emerald-600">
 												{
 													// stepFourState.uploadFiles
 													// 	?.length
@@ -419,7 +422,7 @@ const StepFour = (props) => {
 
 										<h3 className="text-[#666] font-[700] p-[15px] text-[24px]">
 											Correct Prediction:{' '}
-											<strong className="text-blue-600">
+											<strong className="text-emerald-600">
 												{' '}
 												{
 													stepFourState.userConfirm.filter(
@@ -433,7 +436,7 @@ const StepFour = (props) => {
 
 										<h3 className="text-[#666] font-[700] p-[15px] text-[24px]">
 											Accuracy:{' '}
-											<strong className="text-blue-600">
+											<strong className="text-emerald-600">
 												{/* {parseFloat(
 													stepFourState.userConfirm.filter(
 														(item) =>
@@ -477,7 +480,7 @@ const StepFour = (props) => {
 									<div className="bg-gray-50 px-4 py-3 sm:flex sm:px-6 justify-start">
 										<button
 											type="button"
-											className="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto"
+											className="mt-3 inline-flex w-full justify-center rounded-md bg-white hover:bg-red-100 px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto"
 											onClick={() =>
 												updateState({
 													showResultModal: false,
@@ -488,7 +491,7 @@ const StepFour = (props) => {
 										</button>
 										<button
 											type="button"
-											className="ml-auto w-fit inline-flex items-center justify-center rounded-md border border-transparent bg-blue-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+											className="ml-auto w-fit inline-flex items-center justify-center rounded-md border border-transparent bg-emerald-700 hover:bg-emerald-600 px-4 py-2 text-sm font-medium text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
 											onClick={() => {
 												updateState({
 													showResultModal: false,
