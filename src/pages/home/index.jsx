@@ -188,7 +188,7 @@ export default function Home() {
                 <div className="pt-12 pb-24 max-w-4xl mx-auto fsac4 md:px-1 px-3">
                     <div class="ktq4">
                         <h3 class="pt-3 font-semibold text-lg text-black">
-                            Lorem ipsum dolor sit amet
+                            Delicate origins dance across the canvas of imagination.
                         </h3>
                         <p class="pt-2 value-text text-md text-black fkrr1">
                             With a focus on elegant design and balanced formatting. 
@@ -217,41 +217,17 @@ export default function Home() {
                     </div>
                     <div class="ktq4">
                         <h3 class="pt-3 font-semibold text-lg text-black">
-                        E   legance takes form as each piece falls into place, guided by purpose and precision.
+                            Elegance takes form as each piece falls into place, guided by purpose and precision.
                         </h3>
                         <p class="pt-2 value-text text-md text-black fkrr1">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-                            tincidunt a libero in finibus. Maecenas a nisl vitae ante rutrum
-                            porttitor.
+                           Lines intertwine with grace, carving pathways of boundless creativity.
+                            From a resolute foundation to daring transformations,
+                            each element orchestrates a symphony, bridging the chasm
+                            between imagination and tangible progress.
                         </p>
                     </div>
                 </div>
-                <div className="pt-32 pb-32 max-w-6xl mx-auto fsac4 md:px-1 px-3">
-                    <div class="ktq4">
-                        <h3 class="pt-3 font-semibold text-lg text-black">
-                            Lorem ipsum dolor sit amet
-                        </h3>
-                        <p class="pt-2 value-text text-md text-black fkrr1">
-                            Fusce pharetra ligula mauris, quis faucibus lectus elementum vel.
-                            Nullam vehicula, libero at euismod tristique, neque ligula faucibus
-                            urna, quis ultricies massa enim in nunc. Vivamus ultricies, quam ut
-                            rutrum blandit, turpis massa ornare velit, in sodales tellus ex nec
-                            odio.
-                        </p>
-                    </div>
-                    <div class="ktq4">
-                        <h3 class="pt-3 font-semibold text-lg text-black">
-                            Lorem ipsum dolor sit amet
-                        </h3>
-                        <p class="pt-2 value-text text-md text-black fkrr1">
-                            Fusce pharetra ligula mauris, quis faucibus lectus elementum vel.
-                            Nullam vehicula, libero at euismod tristique, neque ligula faucibus
-                            urna, quis ultricies massa enim in nunc. Vivamus ultricies, quam ut
-                            rutrum blandit, turpis massa ornare velit, in sodales tellus ex nec
-                            odio.
-                        </p>
-                    </div>
-                </div>
+                
                 <section class="relative pb-24">
                     <div class="max-w-6xl mx-auto bg-blue-50 rounded-xl px-4 sm:px-6 text-center">
                         <div class="py-24 md:py-36">

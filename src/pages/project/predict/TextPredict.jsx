@@ -146,7 +146,7 @@ const TextPredict = ({
 					{/* HEADER */}
 					<div className="flex items-center mb-5">
 						<h1 class="mb-5 text-4xl font-extrabold text-gray-900 text-left mt-10 flex">
-							<span class="text-transparent bg-clip-text bg-gradient-to-r to-[#1904e5] from-[#fab2ff] mr-2">
+							<span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-500 from-emerald-700 mr-2">
 								Prediction
 							</span>{' '}
 							result
@@ -187,7 +187,7 @@ const TextPredict = ({
 					<div className="grid grid-cols-4 grid-rows-5 gap-4 h-[85%]">
 						{/* TABLE */}
 						<div className="col-span-4 row-span-3 max-h-96 overflow-y-auto rounded-lg shadow-lg">
-							<div className="sticky top-0 bg-blue-100">
+							<div className="sticky top-0 bg-emerald-400">
 								<table className="min-w-full table-auto border-collapse rounded-lg overflow-hidden">
 									<thead>
 										<tr>
@@ -354,8 +354,8 @@ const TextPredict = ({
 																				)
 																					? {
 																							backgroundColor:
-																								'#4f46e5',
-																							color: 'white',
+																								'#FADA7A',
+																							color: 'black',
 																							paddingLeft:
 																								'0.5rem',
 																							paddingRight:
@@ -386,10 +386,10 @@ const TextPredict = ({
 										<div>
 											{explanation.map((item, index) => (
 												<button
-													className={`px-4 py-2 m-2 border rounded ${
+													className={`px-4 py-2 m-2 border rounded-lg ring-1 hover:ring-emerald-200 ${
 														selectedClass ===
 														item.class
-															? 'bg-blue-500 text-white'
+															? 'bg-emerald-500  text-white'
 															: 'bg-gray-200'
 													}`}
 													key={index}

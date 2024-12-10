@@ -83,7 +83,7 @@ const TextTrainPreview = ({ texts, pagination, next, updateFields }) => {
 			<div className="flex w-full pt-2 pb-5">
 				{isLoading && <Loading />}
 				<div
-					class="flex items-center p-4 mb-4 text-sm text-blue-800 border border-blue-300 rounded-lg bg-blue-50"
+					class="flex items-center p-4 mb-4 text-sm text-emerald-800 border border-emerald-300 rounded-lg bg-blue-50"
 					role="alert"
 				>
 					<svg
@@ -103,7 +103,7 @@ const TextTrainPreview = ({ texts, pagination, next, updateFields }) => {
 				<div className="ml-auto relative h-full pt-3">
 					<button
 						onClick={handleTrain}
-						className=" text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-2 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+						className=" text-white bg-gradient-to-r from-emerald-700 to-emerald-500 hover:bg-gradient-to-bl focus:ring-2 focus:outline-none focus:ring-cyan-300 dark:focus:ring-emerald-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
 					>
 						Train Model
 					</button>

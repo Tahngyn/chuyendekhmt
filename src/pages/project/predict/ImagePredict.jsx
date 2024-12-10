@@ -188,21 +188,7 @@ const ImagePredict = ({
 								<p className="text-left text-emerald-700 font-bold text-4xl text-transform: uppercase mt-4 mb-3">
 									{stepFourState.confidenceLabel}
 								</p>
-								<article className="text-balance">
-									Predicting data is susceptible to errors for
-									several reasons, including{' '}
-									<a class="underline decoration-emerald-500">
-										incomplete or noisy datasets, biases in
-										the training data, and limitations in
-										the model’s algorithms.
-									</a>{' '}
-									These issues can cause inaccurate
-									predictions, which underscores the
-									importance of thorough data preprocessing,
-									and continuous evaluation to reduce
-									potential errors and improve prediction
-									accuracy.
-								</article>
+								
 							</div>
 							<div className="col-span-1 row-span-3 grid grid-cols-1 grid-rows-4 gap-4">
 								<div className="row-span-1 flex items-center justify-center space-x-4">

@@ -416,7 +416,7 @@ const Labeling = ({
 				<section className="flex h-full w-4/12 flex-col overflow-y-auto bg-gray-50 pt-3">
 					<h1 className="mt-10 mb-4 text-3xl text-center font-extrabold leading-none tracking-tight text-gray-900">
 						Your{' '}
-						<mark className="px-2 text-white bg-blue-600 rounded">
+						<mark className="px-2 text-white bg-emerald-500 rounded">
 							Labels
 						</mark>{' '}
 						here!!!
@@ -428,7 +428,7 @@ const Labeling = ({
 								key={index}
 								className="flex items-center justify-between px-4 py-4 bg-white rounded-lg shadow transition duration-200 ease-in-out hover:bg-gray-50"
 							>
-								<span className="text-lg font-semibold text-blue-600 hover:text-indigo-800">
+								<span className="text-lg font-semibold text-emerald-500 hover:text-emerald-800">
 									{label}
 								</span>
 								<button
@@ -453,7 +453,7 @@ const Labeling = ({
 					<div className="flex items-center justify-center px-auto w-full">
 						<button
 							onClick={saveLabel}
-							className=" text-white bg-blue-600 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+							className=" text-white bg-emerald-600 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
 						>
 							Save
 						</button>
@@ -479,13 +479,13 @@ const Labeling = ({
 							</div>
 							<div className="flex flex-col">
 								<h3 className="text-lg font-semibold">
-									Pixel Brain
+									Auto Brain
 								</h3>
 								<p className="text-light text-gray-400">
-									ise_uet@vnu.edu.vn
+									auto_ml@vnu.edu.vn
 								</p>
 							</div>
-						</div>
+						</div>000000000000000000000000000000000.................................................................................................................................................................
 					</div>
 					<section className="h-max">
 						<div className="flex h-max">
@@ -509,24 +509,21 @@ const Labeling = ({
 						<article className=" leading-7 tracking-wider text-gray-500">
 							<p>Dear Automler,</p>
 							<p>
-								In training a model, accurate labeling of data
-								is crucial for achieving reliable outcomes.
-								Labels serve as the ground truth that the model
-								learns to predict, guiding the algorithm's
-								adjustments during training. Poor labeling can
-								lead to significant bias, reducing the model's
-								ability to generalize to new data. Thus,
-								ensuring high-quality, consistent labels is
-								essential for developing an effective and robust
-								machine learning model
+								Accurate data labeling is crucial for effective
+								model training, as labels provide the ground truth 
+								that guides the algorithm's learning and adjustments. 
+								Poorly labeled data can introduce bias, reducing the model's ability
+								ato generalize to new data. Ensuring high-quality 
+								and consistent labels is essential for building 
+								reliable and robust machine learning models.
 							</p>
-							<footer className="mt-12">
+							<footer className="mt-12">=
 								<p>Thanks & Regards,</p>
-								<p>Pixel Brain</p>
+								<p>Auto Brain</p>
 							</footer>
 						</article>
 					</section>
-					<div className=" mt-12 rounded-xl border-2 border-dashed border-blue-500 bg-gray-50 h-full">
+					<div className=" mt-12 rounded-xl border-2 border-dashed border-emerald-500 bg-gray-50 h-full">
 						<textarea
 							id="edt-label"
 							name="myInput"
@@ -541,7 +538,7 @@ const Labeling = ({
 							<button
 								onClick={handleAddLabel}
 								type="submit"
-								className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:outline-none font-medium rounded-lg text-sm px-5 py-2 text-center me-2"
+								className="text-white bg-gradient-to-r from-emerald-500 to-emerald-700 hover:bg-gradient-to-bl focus:outline-none font-medium rounded-lg text-sm px-5 py-2 text-center me-2"
 							>
 								Send
 							</button>
