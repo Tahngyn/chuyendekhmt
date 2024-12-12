@@ -299,6 +299,9 @@ const Labeling = ({
 	}, [currentConfig])
 
 	const checkData = () => {
+		console.log(savedLabels)
+		console.log(images)
+
 		const currentLabeled = new Set()
 		if (!images) {
 			return false

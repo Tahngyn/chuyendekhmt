@@ -73,7 +73,7 @@ const StepFour = (props) => {
 			.get(API_URL.get_training_history(experimentName))
 			.then((res) => {
 				const data = res.data
-				console.log(data)
+				console.log('train history', data)
 
 				setGraphJSON(data)
 				// readChart(
