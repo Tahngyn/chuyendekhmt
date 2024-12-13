@@ -1,4 +1,5 @@
 import { CubeTransparentIcon } from '@heroicons/react/24/outline'
+import { CubeIcon } from '@heroicons/react/24/outline'
 import dayjs from 'dayjs'
 import relativeTime from 'dayjs/plugin/relativeTime'
 import { PATHS } from 'src/constants/paths'
@@ -14,19 +15,21 @@ export default function ModelCard({ model }) {
 			<div
 				key={model._id}
 				className={classNames(
-					'relative group p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-500 rounded-lg bg-white shadow '
+					'relative group p-6 bg-grey-100 hover:bg-gradient-to-r from-emerald-50 to-emerald-100 hover:ring-2 hover:ring-emerald-200 shadow-md transition duration-300 rounded-lg shadow '
 				)}
 			>
 				<div>
 					<span
 						className={classNames(
-							'text-blue-700',
-							'bg-blue-50',
-							'rounded-lg inline-flex p-3 ring-4 ring-white'
+							'text-emerald-800',
+							'bg-[#F7F8F8]',
+							'rounded-lg inline-flex p-3 ring-4 ring-white',
+							'transition duration-450',
+							'group-hover:scale-110 group-hover:bg-emerald-100 ease-in-out'
 						)}
 					>
-						<CubeTransparentIcon
-							className="h-6 w-6"
+						<CubeIcon
+							className="h-7 w-7"
 							aria-hidden="true"
 						/>
 					</span>

@@ -130,7 +130,7 @@ const ImagePredict = ({
 			stepFourState.showImageModal ? (
 				<>
 					<h1 class="mb-5 text-4xl font-extrabold text-gray-900 text-left mt-10 flex">
-						<span class="text-transparent bg-clip-text bg-gradient-to-r to-[#1904e5] from-[#fab2ff] mr-2">
+						<span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-500 from-emerald-700 mr-2">
 							Prediction
 						</span>{' '}
 						result
@@ -185,24 +185,10 @@ const ImagePredict = ({
 										className="object-cover w-full h-[75%] rounded-md"
 									/>
 								)}
-								<p className="text-left text-[#1904e5] font-semibold text-4xl text-transform: uppercase mt-4 mb-3">
+								<p className="text-left text-emerald-700 font-bold text-4xl text-transform: uppercase mt-4 mb-3">
 									{stepFourState.confidenceLabel}
 								</p>
-								<article className="text-balance">
-									Predicting data is susceptible to errors for
-									several reasons, including{' '}
-									<a class="underline decoration-indigo-500">
-										incomplete or noisy datasets, biases in
-										the training data, and limitations in
-										the model’s algorithms.
-									</a>{' '}
-									These issues can cause inaccurate
-									predictions, which underscores the
-									importance of thorough data preprocessing,
-									and continuous evaluation to reduce
-									potential errors and improve prediction
-									accuracy.
-								</article>
+								
 							</div>
 							<div className="col-span-1 row-span-3 grid grid-cols-1 grid-rows-4 gap-4">
 								<div className="row-span-1 flex items-center justify-center space-x-4">
@@ -304,7 +290,7 @@ const ImagePredict = ({
 											<span className="absolute top-0 left-0 w-40 h-40 -mt-10 -ml-3 transition-all duration-700 bg-blue-500 rounded-full blur-md ease"></span>
 											<span className="absolute inset-0 w-full h-full transition duration-700 group-hover:rotate-180 ease">
 												<span className="absolute bottom-0 left-0 w-24 h-24 -ml-10 bg-purple-500 rounded-full blur-md"></span>
-												<span className="absolute bottom-0 right-0 w-24 h-24 -mr-10 bg-pink-500 rounded-full blur-md"></span>
+												<span className="absolute bottom-0 right-0 w-24 h-24 -mr-10 bg-emerald-500 rounded-full blur-md"></span>
 											</span>
 											<span className="relative text-white">
 												Effectiveness
@@ -328,7 +314,7 @@ const ImagePredict = ({
 								<h1 className="text-xl font-bold mb-2">
 									Confident Score
 								</h1>
-								<p className="px-4 py-2 text-6xl text-transparent bg-clip-text bg-gradient-to-r to-[#1904e5] from-[#fab2ff] rounded-lg text-center">
+								<p className="px-4 py-2 text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r to-emerald-500 from-emerald-700 rounded-lg text-center">
 									{parseFloat(
 										stepFourState.confidenceScore
 									).toFixed(2)}
@@ -342,9 +328,9 @@ const ImagePredict = ({
 					htmlFor="file"
 					onClick={() => updateState({ showPredictModal: true })}
 					// for="file"
-					className="flex flex-col w-[95%] cursor-pointer mt-24 shadow justify-between mx-auto items-center p-[10px] gap-[5px] bg-[rgba(0,110,255,0.041)] h-[300px] rounded-[10px] "
+					className="flex flex-col w-[95%] cursor-pointer mt-24 shadow justify-between mx-auto items-center p-[10px] gap-[5px] bg-emerald-50 hover:bg-white h-[300px] rounded-[10px] "
 				>
-					<div className="header flex flex-1 w-full border-[2px] justify-center items-center flex-col border-dashed border-[#4169e1] rounded-[10px]">
+					<div className="header flex flex-1 w-full border-[2px] justify-center items-center flex-col border-dashed border-emerald-700 rounded-[10px]">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							width="100"
